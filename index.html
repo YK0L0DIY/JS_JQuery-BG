@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>bg change</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+        <button>click me</button>
+        <script>
+            var bg=[
+                "url(bg1.jpg)",
+                "url(bg2.jpg)",
+                "url(bg3.jpg)",
+                "url(bg4.jpg)",
+                "url(bg5.jpg)",
+            ]
+            
+            var i=0;
+            
+            document.querySelector("button").addEventListener("click",function(){
+                
+                if(i==bg.length){
+                    i=0;
+                }
+                else{i++;}
+                document.querySelector("body").style.background = bg[i] + " center fixed";
+                document.querySelector("body").style.backgroundSize = "cover";
+                
+            })
+        
+        
+        
+        
+        
+        
+        </script>
+	</body>
+</html>
